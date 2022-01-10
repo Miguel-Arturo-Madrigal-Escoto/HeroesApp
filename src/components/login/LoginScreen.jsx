@@ -1,17 +1,9 @@
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom"
-import { useForm } from "../../hooks/useForm";
 
 export const LoginScreen = () => {
 
     const navigate = useNavigate();
 
-    const [ values, handleInputChange ] = useForm({
-        username: ''
-    });
-
-    const { username } = values;
-    
     const handleLogin = () => {
         /* navigate('/'); -> puedo volver con <- */
 

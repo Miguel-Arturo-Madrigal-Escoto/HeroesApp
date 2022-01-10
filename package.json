@@ -1,5 +1,6 @@
 {
-  "name": "06-heroes-app",
+  "homepage": "https://miguel-arturo-madrigal-escoto.github.io/",
+  "name": "07-heroes-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
