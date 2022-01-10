@@ -41,7 +41,7 @@ export const HeroScreen = () => {
         navigate(-1);
     }
 
-    const imgPath = `/assets/${ id }.jpg`;
+    const imgPath = `https://miguel-arturo-madrigal-escoto.github.io/HeroesApp/assets/${ id }.jpg`;
 
     return (
         <div className="row mt-5">

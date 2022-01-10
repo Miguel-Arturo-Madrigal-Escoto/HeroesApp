@@ -6,7 +6,7 @@ export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance
     return (
         <>
             <Link to={`/hero/${id}`} className="my-card mt-3 me-5 mb-4 animate__animated animate__bounceInRight">
-                <img src={`./assets/${id}.jpg`} className="img img-responsive" alt={superhero}/>
+                <img src={`https://miguel-arturo-madrigal-escoto.github.io/HeroesApp/assets/${id}.jpg`} className="img img-responsive" alt={superhero}/>
                 <div className="profile-name">{superhero}</div>
                 <div className="profile-position">{alter_ego}</div>
                 <div className="profile-overview">

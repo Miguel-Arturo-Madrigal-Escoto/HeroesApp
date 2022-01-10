@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink, useNavigate, Navigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {
 
@@ -12,10 +12,6 @@ export const Navbar = () => {
         });
     }
 
-    if (!localStorage.getItem('username')){
-        return <Navigate to="login"/>
-    }
-
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
             
@@ -23,7 +19,7 @@ export const Navbar = () => {
                 className="navbar-brand ms-3" 
                 to="/"
             >
-                Asociaciones
+                Associations
             </Link>
 
             <div className="navbar-collapse ms-3">
@@ -63,9 +59,7 @@ export const Navbar = () => {
                 <ul className="navbar-nav ms-auto">
 
                     <span className="nav-item nav-link text-info">
-                        {
-                            localStorage.getItem('username') || ''
-                        }
+                    
                     </span>
 
                     <button 
