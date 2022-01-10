@@ -1,11 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .my-card {
     min-width: 260px;
     max-width: 300px;
-    max-height: 55vh;
+    max-height: 60vh;
     border-radius: 5px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    position: relative;
     margin: 10px auto;
     cursor: pointer;
     display: inline-block;
@@ -75,4 +79,11 @@
  
 .my-card img:hover {
     transform: scale(1.01);
+}
+
+@media screen and (max-width: 768px) {
+    .my-card {
+        min-width: 100px;
+        max-width: 100%;
+    }
 }

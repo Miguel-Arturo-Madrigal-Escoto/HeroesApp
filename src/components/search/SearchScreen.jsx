@@ -6,6 +6,8 @@ import { getHeroesByName } from "../../selectors/getHeroesByName";
 import { HeroCard } from "../hero/HeroCard";
 import { useMemo } from "react";
 
+import '../../css/search.css'
+
 export const SearchScreen = () => {
 
     const navigate = useNavigate();
@@ -33,7 +35,7 @@ export const SearchScreen = () => {
             <hr />
 
             <div className="row">
-                <div className="col-5" style={{'textAlign': 'center'}}>
+                <div className="col" style={{'textAlign': 'center', 'width': '100%'}}>
                     <h4>Form</h4>
                     <hr />
 
@@ -57,7 +59,7 @@ export const SearchScreen = () => {
                     </form>
                 </div>
 
-                <div className="col-7" style={{'textAlign': 'center', 'overflow': 'hidden'}}>
+                <div className="col" style={{'textAlign': 'center', 'width': '100%'}}>
                     <h4>Results</h4>
                     <hr />
                     {

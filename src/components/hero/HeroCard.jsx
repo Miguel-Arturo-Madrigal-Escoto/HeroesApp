@@ -4,8 +4,8 @@ import '../../css/hero-card.css';
 
 export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance, characters }) => {
     return (
-        <>
-            <Link to={`/hero/${id}`} className="my-card mt-3 me-5 mb-4 animate__animated animate__bounceInRight">
+        <div className="container-card">
+            <Link to={`/hero/${id}`} className="my-card mt-3 mb-4 animate__animated animate__bounceInRight">
                 <img src={`https://miguel-arturo-madrigal-escoto.github.io/HeroesApp/assets/${id}.jpg`} className="img img-responsive" alt={superhero}/>
                 <div className="profile-name">{superhero}</div>
                 <div className="profile-position">{alter_ego}</div>
@@ -24,6 +24,6 @@ export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance
                     </div>
                 </div>
             </Link>
-        </>
+        </div>
     );
 };

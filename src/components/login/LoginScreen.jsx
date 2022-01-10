@@ -23,7 +23,7 @@ export const LoginScreen = () => {
     }
 
     return (
-        <div className="container mt-5">
+        <div className="container mt-5" style={{'textAlign': 'center'}}>
             <form className="form">
                 <h1>Welcome</h1>
                 <hr />

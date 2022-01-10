@@ -1,0 +1,13 @@
+.container .row {
+    display: flex;
+}
+
+.col {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .container .row {
+        flex-direction: column;
+    }
+}

@@ -7,7 +7,7 @@ export const Navbar = () => {
 
     const handleLogout = () => {
         // TODO: por hacer
-        navigate('/login', {
+        navigate('/HeroesApp/', {
             replace: true
         });
     }
@@ -55,16 +55,13 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-collapse w-100 order-3 dual-collapse2 d-flex justify-content-end me-3">
-                <ul className="navbar-nav ms-auto">
-
-                    <span className="nav-item nav-link text-info">
-                    
-                    </span>
+            <div className="navbar-collapse w-100 order-3 dual-collapse2 d-flex justify-content-start">
+                <ul className="navbar-nav">
 
                     <button 
-                        className="nav-item nav-link btn" 
+                        className="nav-item nav-link btn ms-3" 
                         onClick={ handleLogout }
+                        style={{'textAlign': 'left'}}
                     >
                         Logout
                     </button>
