@@ -5,7 +5,6 @@ import { useForm } from "../../hooks/useForm";
 export const LoginScreen = () => {
 
     const navigate = useNavigate();
-    let user = '';
 
     const [ values, handleInputChange ] = useForm({
         username: localStorage.getItem('username') || ''
