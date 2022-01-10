@@ -2,6 +2,8 @@ import { useMemo } from "react";
 import { useParams, Navigate, useNavigate } from "react-router-dom"
 import { getHeroById } from "../../selectors/getHeroById";
 
+import '../../css/hero-screen.css';
+
 export const HeroScreen = () => {
 
     /* para leer los parámetros de la URL
@@ -44,15 +46,15 @@ export const HeroScreen = () => {
     const imgPath = `https://miguel-arturo-madrigal-escoto.github.io/HeroesApp/assets/${ id }.jpg`;
 
     return (
-        <div className="row mt-5">
-            <div className="col-4">
+        <div className="row mt-5 hero-container">
+            <div className="col">
                 <img 
                     src={ imgPath }
                     alt={ superhero }
                     className="img-thumbnail animate__animated animate__bounceInLeft"
                 />
             </div>
-            <div className="col-8 animate__animated animate__fadeIn">
+            <div className="col animate__animated animate__fadeIn">
                 <h3>{ superhero }</h3>
                 <ul className="list-group">
                     <li className="list-group-item"><b>Alter ego: </b>{ alter_ego }</li>
